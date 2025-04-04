@@ -96,27 +96,46 @@ h1 {
 }
 
 .wears {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 10fr));
+  margin: 0.5rem;
 }
 
 .card img {
   border-radius: 12px;
   cursor: pointer;
+  margin: 40px 30px;
 }
 
 .card {
-  width: 280px;
-  height: 70vh;
-  background-color: red;
+  width: 300px;
+  height: 80vh;
+  background-color: #fef8f8;
+  border-radius: 8px;
+}
+
+.card:hover {
+  width: 300px;
+  height: 80vh;
+  background-color: #ea9f9f;
+  border-radius: 8px;
 }
 
 p {
   text-align: center;
+  font-size: 30px;
 }
 
 .btn {
+  margin: 40px 80px;
+  color: white;
+  background-color: black;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 12px;
 }
 
 footer {
